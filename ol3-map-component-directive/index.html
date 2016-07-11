@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro de datos inmobiliarios</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js" type="text/javascript" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js" type="text/javascript" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js" type="text/javascript" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-touch.min.js" type="text/javascript" ></script>
+        
+        <link rel="stylesheet" href="http://openlayers.org/en/v3.17.1/css/ol.css" type="text/css">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+
+        <!-- Optional theme 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" > -->
+
+        <!-- Latest compiled and minified JavaScript 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script> -->
+        <script src="js/bower_components/angular-bootstrap/ui-bootstrap.min.js" ></script>
+        <script src="http://openlayers.org/en/v3.17.1/build/ol.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="pages/template.css" type="text/css">
+        
+    </head>
+    <body>
+        <header class="navbar navbar-default navbar-fixed-top navbar-inner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand visible-xs" href="#">Registro Datos Inmobiliarios</a>
+                </div>
+                <nav class="hidden-xs">
+                    <ul class="nav navbar-nav">
+                        <a href="#top" role="button" class="navbar-brand">
+                            Registro Datos Inmobiliarios
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="container-fluid fill">
+            <div ng-app="myApp" class="fill" >
+                <!-- This one wants to be 100% height -->
+
+                <div class="fill" ng-view></div>
+
+            </div>
+        </div>
+        
+        
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
